@@ -1,0 +1,213 @@
+/* HomePage.module.css */
+.main {
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.hero {
+    background-color: #FCB9B2; /* Rosa claro para o fundo do Hero */
+    padding: 80px 20px;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.heroContent h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #461220; /* Bordô escuro para o título do Hero */
+}
+
+.heroContent p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #8C2F39; /* Vinho para o parágrafo do Hero */
+}
+
+.button {
+    display: inline-block;
+    background-color: #B23A48; /* Vermelho vivo para o fundo do botão */
+    color: #FFFFFF; /* Branco para a cor do texto do botão */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #8C2F39; /* Vinho para o fundo do botão no hover */
+}
+
+.contentSection {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.leftImage .imageContainer {
+    flex: 1;
+    padding-right: 20px;
+    max-width: 1000px; /* Ajuste este valor conforme a largura desejada */
+    margin: 0 auto; /* Opcional: para centralizar o carrossel dentro da .imageContainer */
+}
+
+.rightImage .imageContainer {
+    flex: 1;
+    padding-left: 20px;
+    order: 2;
+}
+
+.imageContainer img,
+.imageContainer iframe,
+.gallery {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.textContainer {
+    flex: 1;
+}
+
+.textContainer h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #461220; /* Bordô escuro para os títulos da seção */
+}
+
+.textContainer ul {
+    list-style: bullet;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    color: #8C2F39; /* Vinho para o texto da lista */
+}
+
+.dentistCard {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.dentistCard h3 {
+    margin-top: 0;
+    color: #461220; /* Bordô escuro para os títulos dos cards */
+}
+
+.textContainer p a {
+    color: #8C2F39; /* Vinho para os links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.textContainer p a:hover {
+    color: #461220; /* Bordô escuro para os links no hover */
+    text-decoration: underline;
+}
+
+/* Estilos para o Swiper */
+.mySwiper {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #FFFFFF; /* Branco para o fundo dos slides */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.swiper-slide h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #461220; /* Bordô escuro para os títulos dos slides */
+    word-break: break-word; /* Permite que palavras longas quebrem */
+}
+
+.swiper-slide p {
+    color: #8C2F39; /* Vinho para o texto dos slides */
+    font-size: 0.9em;
+    word-break: break-word; /* Permite que palavras longas quebrem */
+}
+
+/* Estilos para os botões de navegação */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #8C2F39; /* Vinho para a cor dos botões de navegação */
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-button-prev {
+    left: 10px !important;;
+}
+
+.swiper-button-next {
+    right: 10px !important;;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    opacity: 1;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Estilos para a paginação */
+.swiper-pagination {
+    position: static !important; /* Para exibir a paginação abaixo do carrossel */
+    margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #FCB9B2; /* Rosa claro para os bullets da paginação */
+    opacity: 1;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background: #B23A48; /* Vermelho vivo para o bullet ativo da paginação */
+}

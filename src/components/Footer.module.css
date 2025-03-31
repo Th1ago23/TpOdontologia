@@ -1,0 +1,9 @@
+.footer {
+    background-color: #364958; /* Cor mais escura da paleta */
+    color: #c9e4ca; /* Cor mais clara da paleta */
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

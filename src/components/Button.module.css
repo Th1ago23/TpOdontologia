@@ -1,0 +1,24 @@
+.button {
+    display: inline-block;
+    background-color: #55828b; /* Cor intermediária da paleta */
+    color: #c9e4ca; /* Cor mais clara da paleta */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #3b6064; /* Cor mais escura da paleta */
+}
+
+.primary {
+    background-color: #87bba2; /* Outra cor intermediária */
+}
+
+.primary:hover {
+    background-color: #55828b;
+}

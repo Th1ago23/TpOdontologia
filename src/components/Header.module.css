@@ -1,0 +1,53 @@
+.header {
+    background-color: #364958; /* Cor mais escura da paleta */
+    color: #c9e4ca; /* Cor mais clara da paleta */
+    padding: 1em 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.nav li {
+    display: inline-block; /* Organiza os itens na horizontal */
+    margin: 0 1px; /* Adiciona um espaço entre os itens da lista */
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: #c9e4ca;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #87bba2; /* Cor intermediária da paleta */
+}
+.authButton {
+    background-color: #B23A48; /* Vermelho vivo para o fundo do botão */
+    color: #FFFFFF; /* Branco para a cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Arredonda os cantos */
+    font-size: 1em; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+    margin: 0 5px; /* Espaçamento entre os botões */
+}
+
+.authButton:hover {
+    background-color: #8C2F39; /* Vinho para o fundo do botão no hover */
+}

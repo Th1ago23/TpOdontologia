@@ -1,0 +1,16 @@
+.cadastroPage {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cadastroPage h1 {
+    text-align: center;
+    color: #364958; /* Cor mais escura da paleta */
+    margin-bottom: 20px;
+}
+
+/* Você pode adicionar mais estilos para o formulário de cadastro aqui */
