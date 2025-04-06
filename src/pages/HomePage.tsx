@@ -90,8 +90,7 @@ function HomePage() {
                 </div>
             </section>
 
-            {/* Outras seções do seu HomePage */}
-            <motion.section // Animação na seção dentistas
+            <motion.section
                 id="dentistas"
                 className={`${styles.contentSection} ${styles.rightImage}`}
                 initial={{ opacity: 0, x: 20 }}
