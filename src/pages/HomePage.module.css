@@ -5,24 +5,56 @@
 }
 
 .hero {
-    background-color: #FCB9B2; /* Rosa claro para o fundo do Hero */
-    padding: 80px 20px;
+    /* Remova o padding */
     text-align: center;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Opcional: Se quiser bordas arredondadas */
+    /* Defina uma altura para o hero */
+    height: 500px; /* Ajuste este valor conforme necessário */
+    display: flex;       /* Use flexbox para centralizar */
+    align-items: center;  /* Centralize verticalmente */
+    justify-content: center; /* Centralize horizontalmente */
 }
 
-.heroContent h2 {
-    font-size: 3em;
-    margin-bottom: 15px;
-    color: #461220; /* Bordô escuro para o título do Hero */
+.heroContent {
+    position: absolute; /* Posicione absolutamente */
+    top: 0;           /* No topo */
+    left: 0;          /* Na esquerda */
+    width: 100%;       /* Ocupe toda a largura */
+    height: 100%;      /* Ocupe toda a altura */
+    z-index: 1;
+    display: flex;       /* Use flexbox para centralizar o conteúdo */
+    flex-direction: column; /* Coloque o conteúdo em coluna */
+    align-items: center;  /* Centralize horizontalmente */
+    justify-content: center; /* Centralize verticalmente */
+    background-color: rgba(252, 185, 178, 0.7); /* Cor de fundo semi-transparente */
+    opacity: 0;          /* Inicialmente invisível */
+    transition: opacity 0.5s ease; /* Transição suave */
 }
 
-.heroContent p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    color: #8C2F39; /* Vinho para o parágrafo do Hero */
+
+.heroContent h2,
+.heroContent p,
+.heroContent a {
+    color: #461220;      /* Cor do texto */
+    text-align: center;  /* Centralize o texto */
 }
 
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/sua_imagem_de_fundo.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    opacity: 1;        /* Imagem sempre visível */
+    z-index: 0;
+}
 .button {
     display: inline-block;
     background-color: #B23A48; /* Vermelho vivo para o fundo do botão */
