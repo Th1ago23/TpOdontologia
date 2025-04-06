@@ -12,7 +12,7 @@ function App() {
     <div className="app-container">
       <Header />
       <div className="content">
-        <Routes> {/* Use Routes aqui */}
+        <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/cadastro" element={<CadastroPage />} />
           <Route path="/login" element={<LoginPage />} />
