@@ -1,16 +1,21 @@
+/* Header.module.css */
+
 .header {
-    background-color: #364958; /* Cor mais escura da paleta */
-    color: #c9e4ca; /* Cor mais clara da paleta */
-    padding: 1em 20px;
+    background-color: #7D4F50;
+    color: #F9EAE1;
+    height: 20px;
+    padding: 2em 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo h1 {
-    margin: 0;
-    font-size: 1.5em;
+.logo img {
+    height:80px;
+    width: auto;
+    display: block;
 }
+
 
 .nav ul {
     list-style: none;
@@ -18,9 +23,10 @@
     margin: 0;
     display: flex;
 }
+
 .nav li {
-    display: inline-block; /* Organiza os itens na horizontal */
-    margin: 0 1px; /* Adiciona um espaço entre os itens da lista */
+    display: inline-block;
+    margin: 0 1px;
 }
 
 .nav ul li {
@@ -28,26 +34,39 @@
 }
 
 .nav ul li a {
-    color: #c9e4ca;
+    color: #F9EAE1;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav ul li a:hover {
-    color: #87bba2; /* Cor intermediária da paleta */
-}
-.authButton {
-    background-color: #B23A48; /* Vermelho vivo para o fundo do botão */
-    color: #FFFFFF; /* Branco para a cor do texto do botão */
-    padding: 10px 20px; /* Espaçamento interno */
-    border: none; /* Remove a borda padrão do botão */
-    border-radius: 5px; /* Arredonda os cantos */
-    font-size: 1em; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor ao passar o mouse */
-    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
-    margin: 0 5px; /* Espaçamento entre os botões */
+    color: #fff;
 }
 
-.authButton:hover {
-    background-color: #8C2F39; /* Vinho para o fundo do botão no hover */
+/* Estilos para os links de autenticação */
+.authLink {
+    color: #D1BE9C; /* Cor inicial do texto */
+    text-decoration: none; /* Remove sublinhado padrão */
+    position: relative; /* Necessário para posicionar a linha */
+    padding-bottom: 5px; /* Espaço para a linha */
+    transition: color 0.3s ease; /* Transição suave na cor */
+}
+
+.authLink::after {
+    content: ''; /* Conteúdo vazio (obrigatório para ::after) */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Largura inicial da linha */
+    height: 2px; /* Espessura da linha */
+    background-color: #F9EAE1; /* Cor da linha */
+    transition: width 0.3s ease; /* Transição suave na largura */
+}
+
+.authLink:hover {
+    color: #F9EAE1; /* Cor do texto no hover */
+}
+
+.authLink:hover::after {
+    width: 100%; /* Largura da linha no hover */
 }

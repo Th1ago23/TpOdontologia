@@ -1,7 +1,7 @@
 .button {
     display: inline-block;
-    background-color: #55828b; /* Cor intermediária da paleta */
-    color: #c9e4ca; /* Cor mais clara da paleta */
+    background-color: #CC8B86; /* Cor intermediária da paleta */
+    color: #fff; /* Cor mais clara da paleta */
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 5px;
